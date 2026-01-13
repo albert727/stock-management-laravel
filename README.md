@@ -1,46 +1,33 @@
-# Sistem Pengelolaan Stok Produk (Inventory Management)
+# 📦 Sistem Pengelolaan Stok Produk
 
-Aplikasi berbasis web untuk mengelola stok barang secara real-time. Proyek ini dibangun untuk memastikan konsistensi data dan efisiensi dalam operasional inventaris barang.
+Aplikasi manajemen stok barang berbasis web yang dikembangkan untuk mempermudah pemantauan inventaris secara real-time dan pembuatan laporan otomatis.
 
 ## 🚀 Fitur Utama
-**Autentikasi User**: Sistem login yang aman untuk mengelola akses pengguna.
-**Manajemen Produk (CRUD)**: Menambah, melihat, mengubah, dan menghapus data produk dengan mudah.
-**Monitoring Stok**: Pantauan stok barang secara real-time untuk menghindari kekurangan atau kelebihan muatan.
-**Database Relasional**: Menggunakan MySQL dengan perancangan tabel yang saling terhubung untuk integritas data yang optimal.
+* **Sistem Autentikasi**: Keamanan akses halaman menggunakan session check (`cek.php`).
+* **Manajemen Stok (CRUD)**: Kelola data barang (Tambah, Lihat, Edit, Hapus) dengan efisien.
+* **Laporan PDF Otomatis**: Fitur cetak laporan stok dan transaksi menggunakan library **FPDF**.
+* **Monitoring Real-time**: Dashboard informatif untuk melihat status stok barang saat ini.
 
 ## 🛠️ Tech Stack
-**Framework**: PHP Laravel (MVC Architecture).
-**Database**: MySQL.
-**Frontend**: Tailwind CSS / Bootstrap.
-**Konsep**: RESTful API & MVC Design Pattern.
+* **Language**: PHP Native.
+* **Database**: MySQL.
+* **Library**: FPDF (untuk integrasi cetak laporan).
+* **Frontend**: Bootstrap / CSS.
 
-## 💻 Cara Instalasi (Lokal)
-1. Persiapan:
+## ⚙️ Panduan Instalasi (Lokal)
 
-   Pastikan sudah menginstal:
-   * PHP >= 8.x
-   * Composer
-   * Web Server (Laragon / XAMPP)
+### 1. Persiapan
+* Pastikan sudah menginstal Web Server (Laragon / XAMPP).
+* PHP versi 7.4 ke atas.
 
-2. Clone repository ini:
+### 2. Setup Database
+1. Buka `phpmyadmin`.
+2. Buat database baru.
+3. Import file `.sql`
 
-   git clone https://github.com/albert727/pengelolaan_stok.git
+### 3. Konfigurasi Koneksi
+* Cek file `function.php` dan sesuaikan konfigurasi `host`, `user`, `password`, dan `database_name`.
 
-3. Instalasi Dependency
-
-   jalankan composer untuk mengunduh semua library Laravel yang dibutuhkan:
-   composer install
-
-4. Konfigurasi Env
-
-   Salin file .env.example menjadi .env:
-   cp .env.example .env
-
-5. Generate Application Key & Migrasi:
-
-   php artisan key:generate
-   php artisan migrate
-
-6. Jalankan aplikasi:
-
-   php artisan serve
+### 4. Menjalankan Aplikasi
+* Taruh folder di `C:\laragon\www` atau `htdocs`.
+* Akses melalui browser: `http://localhost/pengelolaan_stok/login.php`.
