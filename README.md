@@ -22,15 +22,15 @@ Aplikasi manajemen stok barang berbasis web yang dikembangkan untuk mempermudah 
 
 ### 2. Setup Database
 1. Buka `phpmyadmin`.
-2. Buat database baru.
-3. Import file `.sql`
+2. Buat database baru dengan nama stockbarang.
+3. Import file stockbarang.sql yang tersedia di repository ini.
 
 ### 3. Konfigurasi Koneksi
-* Cek file `function.php` dan sesuaikan konfigurasi `host`, `user`, `password`, dan `database_name`.
+* Sesuaikan konfigurasi database pada file function.php (host, user, password, database).
 
 ### 4. Menjalankan Aplikasi
-* Taruh folder di `C:\laragon\www` atau `htdocs`.
-* Akses melalui browser: `http://localhost/pengelolaan_stok/login.php`.
+* Letakkan folder proyek di dalam direktori www atau htdocs.
+* Akses melalui browser: http://localhost/pengelolaan_stok/login.php
 
 ## 💡 Akses Cepat: 
 
